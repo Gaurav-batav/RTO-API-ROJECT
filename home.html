@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css2.css" >
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script>
+        function api(){
+            axios.get("http://codingshika.com/APP/RTO/rto_superadmin.php")
+            .then(responce=>{
+                console.log(responce.data);
+                document.getElementById("box1").innerHTML=responce.data.posts.status;
+                document.getElementById("box2").innerHTML=responce.data.posts.no_v_scaned;
+                document.getElementById("box3").innerHTML=responce.data.posts.fine_amt;
+                document.getElementById("box4").innerHTML=responce.data.posts.v_reg;
+
+            })
+        }
+    </script>
+
+</head>
+<body onload="api()">
+    <center>
+        <div class="main">
+            <div class="dashbord">
+                <h1> ADMIN <br> DASHBOARD</h1>
+                <div class="dashimg">
+                   <img class="profileimg" src="img/account (1).png">
+                   <img src="img/logout.png">
+                </div>   
+            </div>
+            <div class="one">
+                <img src="img/self-employed (3).png">
+                <h2 class="text1">Hello Super Admin</h2>
+                <h4 class="text2">MH 15 Nashik </h4>
+            </div>
+            <div class="two">
+                <div class="twosub">
+                    <img src="img/policeman.png">
+                    <p>REGISTRED RTO</p>
+                    <h3 id="box1"></h3>
+                </div>
+                <div class="twosub">
+                    <img src="img/qr-code (1).png">
+                    <p>VEHICLE SCANNED</p>
+                    <h3 id="box2"></h3>
+                </div>
+            </div>
+            <div class="three">
+                <div class="threesub">
+                    <img src="img/car.png">
+                    <p>REGISTRED VEHICLE</p>
+                    <h3 id="box3"></h3>
+                </div>
+                <div class="threesub">
+                    <img src="img/police (2).png">
+                    <p>FINE COLLECTED</p>
+                    <h3 id="box4"></h3>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer2">
+                    <h4 class="text3">RTO SECTION | OFFENCE | FINE <br> AMOUNT </h4>
+                </div>
+            </div>
+
+        </div>
+    </center>
+    
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.main{
+    width: 600px;
+    height: 720px;
+    background-color: rgba(0, 157, 255, 0.912);
+    margin-top: 13px;
+}
+.dashbord{
+    height: 95px;
+    margin-bottom: 12px;
+    background-color: cadetblue;
+    color: white;
+    border-bottom: 2px solid rgb(56, 147, 150);
+}
+.one{
+    height: 165px;
+    background-color: white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.two{
+    height: 165px;
+    background-color: transparent;
+    margin-top: 12px;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.three{
+    height: 165px;
+    background-color: transparent;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.footer{
+    height: 86px;
+    margin-top: 15px;
+}
+.footer2{
+    height: 60px;
+    background-color: cadetblue;
+    margin-left: 100px;
+    margin-right: 100px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.twosub{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+.threesub{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+}
+/****** ICONS******/
+
+
+.text1{
+    margin-top: 10px;
+    text-decoration: underline;
+    margin-bottom: 5px;
+}
+img{
+    border-bottom: 3px solid cadetblue;
+    margin-top: 5px;
+}
+p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.830);
+    font-weight: 500;
+}
+.text2{
+    color:  rgba(0, 0, 0, 0.830);
+}
+.text3{
+    margin-top: 10px;
+    color: white;
+}
+.dashimg{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: -50px;
+    margin-right: 38px;
+}
+.profileimg{
+    margin-right: 450px;
+}
